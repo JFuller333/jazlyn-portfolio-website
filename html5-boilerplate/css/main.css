@@ -17,6 +17,12 @@ html {
   line-height: 1.4;
   background: #B8EAD5;
 }
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+}
 .header-section {
 height: 500px;
 }
@@ -31,41 +37,40 @@ span {
 .flexbox-about {
   padding:150px;
 }
-h2{
+h2,h3,h4 {
+  font-size:22px;
   text-align:center;
+  padding: 40px;
+}
+h4 {
+  font-size:1em;
+  text-align:center;
+  padding: 40px;
 }
 .flexbox-about p {
   margin: 125px;
-
 }
-.flexbox-full-container {
+.code-container {
   display: flex;
-  height: 800px;
+  flex-direction: row;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 300px;
+  padding: 150px;
 }
-.flexbox-item-1 {
-  background-color: green ;
-  min-height: 100px;
-  width: full-width;
+.code-child {
+  flex: 1;
+  width: 300px;
+  margin: 5px;
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}  
+.code-child:first-child {
+  margin-right: 20px;
+} 
+.code-child p {
+  text-align: left;
+  margin-left: 150px;
 }
-.flexbox-item-2 {
-  background-color: green;
-  min-height: 100px;
-}
-.flex-p {
-  margin: 250px;
-}
-.flextbox-full-container-2 {
-  display: flex;
-  height: 800px;
-}
-.flexbox-design-p {
-  text-align: center;
-  min-height: 300px;
-}
-
-
-
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
