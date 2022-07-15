@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <!-- Bootstrap 5.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -84,9 +87,10 @@
     </section>
   
     <h2>Design</h2>
-      <section class="design">
-          <div class="design-container" style="width: 50%; margin: 0 auto;">
-            <img src="img/design-code-example.png" alt="Design Code" style="width:50%""></img>     
+      <section id="design">
+          <div class="design-container">
+          <div class="design-example">
+            <img src="img/design-code-example.png" alt="Design Code" style="width:90%"></img>     
             <p class="flexbox-design-p">
                 ◉  Redesign of existing website <br>
                 ◉  HTML, CSS and JavaScript <br>
@@ -95,41 +99,56 @@
                 ◉  Coded contact form using FormSpree <br>
                 ◉  Set up new hosting, transferring domain and email <br>
             </p>
+          </div>
          </div> 
       </section> 
       
+      <h2>Skills</h2>
       <section id="skills">
-          <h2>Skills</h2>
+          <div class="skills-container">
           <div class="circle-1"></div> 
-              <img src="" alt=""></img>     
-        </section>
-        <section>
+              <img src="img/skills-circle 1.png" alt="Jazz Design Skills" style="width:35%"></img>     
           <div class="circle-2"></div>
-              <img src="" alt=""><img>
-        </section>
+              <img src="img/skills-circle-2.png" alt="Jazz Development Skills" style="width:35%"><img>
+      </section>
+
         <section>
           <div class="jazz-container">
             <div class="jazz-child magenta">
-              <p>Flex Column 1</p>
+              <p></p>
             </div>
             <div class="jazz-child green">
-              <p>Flex Column 2</p>
+              <p></p>
             </div>
           </div>
         </section>
   </main>
 
+  <h2> Connect</h2>
   <footer>
-      <div class="footer-divider"></div>
+
+        <div class="footer-divider">
+        </div>
+
       <div id="connect">
-        <div class="connect-box-1"></div>
-          <p>I would love to connect with other web development team. Good old-fashioned
-             networking is welcome, so reach out and let's meet for coffee. (IRL or virtually!)</p>
-        <div class="connect-box-2"></div>
-        <form></form>
-        <p>Phone (323)514-1461     |</p>
-        <p>info@jazlynfuller.com</p>
+        <div class="connect-container-left">
+            <p>I would love to connect with other web development team. Good old-fashioned
+              networking is welcome, so reach out and let's meet for coffee. (IRL or virtually!)</p>
+        </div>
+        <div class="connect-container-right">
+            <div id="contact-form"></div>
+            <div class=email-box>
+              <p>Email</p>
+            </div>
+            <section></section>
+            <div class="message-box">
+              <p>Message</p>
+            </div>
+        </div>
       </div>
+
+      <section><p>Phone (323)514-1461|info@jazlynfuller.com</p>
+      </section>
   </footer>
   
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

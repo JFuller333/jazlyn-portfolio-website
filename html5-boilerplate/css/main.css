@@ -55,7 +55,7 @@ h4 {
   flex-direction: row;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  height: 300px;
+  min-height: 75vh;
   padding: 150px;
 }
 .code-child {
@@ -70,6 +70,107 @@ h4 {
 .code-child p {
   text-align: left;
   margin-left: 150px;
+}
+#design {
+ min-height: 100vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+}
+.design-container {
+  width:30%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.design-container p {
+  text-align: left;
+  margin-left: 120px;
+  padding:20px;
+
+}
+#skills {
+ min-height: 75vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+}
+.skills-container {
+  width:90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-2 {
+  margin-left: 100px;
+}
+.circle-2 {
+  margin-left: -100px;
+}
+footer{
+  background-color: #A6D8C3;
+  max-height: 650px;
+}
+#connect {
+  display: flex;
+  flex-direction: row;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  min-height: 10vh;
+  max-width: 100%;
+  padding: 150px;
+}
+.connect-container-right {
+  flex: 1;
+  flex-grow: 1;
+  flex-basis: 100%;
+  max-width:50%;
+  margin: 5px;
+  margin-right: 50px;  
+  background-color: #C9FFCE;
+}
+.connect-container-left {
+  flex: 1;
+  flex-grow:1;
+  flex-basis: 100%;
+  max-width: 50%;
+  margin: 5px; 
+  margin-right: 120px;  
+}
+.email-box {
+    display:grid;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.email-box p {
+  height: 70px;
+  display: inline-block;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+.email-box div {
+  display: block;
+  background-color: #C9FFCE;
+}
+.message-box {
+  display: block;
+  padding: 10px;
+  text-align: justify;
+  border-top: #A6D8C3;
+}
+.message-box p {
+  margin: 20px;
+}
+footer section {
+  text-align: center;
+  padding: 2px;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -103,6 +204,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
