@@ -29,15 +29,20 @@ html {
 height: 500px;
 }
 h1 {
+  display: block;
   font-size: 2.5em;
-  margin: 80px;
-  padding: 170px;
+  margin: auto;
+  padding: 60px;
+  padding-top: 120px;
+  padding-left: 140px;
 }
 span {
   font-style: italic;
 }
 .flexbox-about {
-  padding:150px;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
 }
 h2,h3,h4 {
   font-size:22px;
@@ -49,8 +54,32 @@ h4 {
   text-align:center;
   padding: 30px;
 }
+.button {
+  background-color: #b8deba;
+  color: black;
+  padding: 10px;
+  border-radius: 30px;
+  width: 120px;
+  height: 45px;
+  border: solid;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.button:hover {
+  color: black;
+  background-color:#C9FFCE;
+  transition: 0.7s;
+}
 .flexbox-about p {
-  margin: 125px;
+  display: block;
+  margin: auto;
+  padding: 80px;
+  max-width: 800px;
+  text-align: center;
 }
 .container {
   display: flex;
@@ -63,39 +92,12 @@ h4 {
 .row {
   flex: 1;
   width: 300px;
-  margin: 5px;
-  text-align: center;     /* will center text in <p>, which is not a flex item */
-}  
-.col {
-  background-color:#B8EAD5;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
 }
 .code-child:first-child {
   margin-right: 20px;
-} 
-.code-child p {
-  text-align: left;
-  margin-left: 150px;
-}
-#design {
- min-height: 50vh;
- width: 50%;
- display: flex;
- align-items: center;
- justify-content:center;
-}
-.design-container {
-  width:30%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.design-container p {
-  text-align: left;
-  margin-left: 120px;
-  padding:20px;
-
 }
 #skills {
  min-height: 75vh;
@@ -132,6 +134,25 @@ footer{
 footer section {
   text-align: center;
   padding: 2px;
+}
+.row h4 {
+  margin: 40px;
+}
+.row p {
+  margin-left: 100px;
+  margin-right: 120px;
+  text-align: left;
+}
+#design-p {
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+}
+div .col {
+  margin-top: 80px;
+}
+section {
+  text-align: center;
 }
 /*
  * Remove text-shadow in selection highlight:
